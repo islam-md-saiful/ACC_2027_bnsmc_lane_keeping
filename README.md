@@ -6,7 +6,9 @@ The Bayesian neural network (BNN) is trained offline and saved as an **ONNX mode
 
 ---
 
-```
+## Repository Structure
+
+```text
 ACC_2027_bnsmc_lane_keeping/
 │
 ├── models/
@@ -31,7 +33,9 @@ ACC_2027_bnsmc_lane_keeping/
 ├── pyproject.toml
 ├── uv.lock
 └── README.md
-    ```
+```
+
+<br>
 
 ---
 
@@ -40,6 +44,8 @@ ACC_2027_bnsmc_lane_keeping/
 - Python 3.12
 - [`uv`](https://docs.astral.sh/uv/)
 - Required Python dependencies defined in `pyproject.toml`
+
+<br>
 
 ---
 
