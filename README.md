@@ -12,15 +12,15 @@ The Bayesian neural network (BNN) is trained offline and saved as an **ONNX mode
 ACC_2027_bnsmc_lane_keeping/
 │
 ├── models/
-│   └── bntsmc_lane.onnx
-│       # Permanently trained Bayesian neural network model
+│   └── bntsmc_lane.onnx   # Permanently trained Bayesian neural network model
+│       
 │
 ├── scripts/
-│   ├── train_lane_bnn.py
-│   │   # Offline BNN training script
+│   ├── train_lane_keeping.py   # Offline BNN training script
+│   │   
 │   │
-│   └── lane_keeping_impl.py
-│       # Lane-keeping simulation using trained BNN inference
+│   └── lane_keeping_impl.py   # Lane-keeping simulation using trained BNN inference
+│       
 │
 ├── src/
 │   └── bntsmc/
@@ -104,13 +104,13 @@ uv build
 The BNN training script is located at:
 
 ```text
-scripts/train_lane_bnn.py
+scripts/train_lane_keeping.py
 ```
 
 Run the training script from the root directory:
 
 ```bash
-python scripts/train_lane_bnn.py
+python scripts/train_lane_keeping.py
 ```
 
 The training procedure is performed **offline**. After training, the trained Bayesian neural network is exported to ONNX format.
@@ -120,26 +120,6 @@ The trained model is saved in:
 ```text
 models/bntsmc_lane.onnx
 ```
-
-## Customize the Number of Training Epochs
-
-If the training script supports the `--epochs` argument, the number of training epochs can be changed from the command line.
-
-For example:
-
-```bash
-python scripts/train_lane_bnn.py --epochs 7000
-```
-
-For a shorter test run:
-
-```bash
-python scripts/train_lane_bnn.py --epochs 100
-```
-
-The trained ONNX model should be stored in the `models/` directory.
-
-> The BNN only needs to be trained when a new model is required. Once `bntsmc_lane.onnx` has been generated, the saved model can be reused directly for inference.
 
 ---
 
