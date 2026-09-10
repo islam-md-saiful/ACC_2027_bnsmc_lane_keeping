@@ -99,7 +99,7 @@ uv build
 
 ---
 
-# BNN Training
+# 4. BNN Training
 
 The BNN training script is located at:
 
@@ -123,7 +123,7 @@ models/bntsmc_lane.onnx
 
 ---
 
-# Lane-Keeping Simulation and Inference
+# 5. Lane-Keeping Simulation and Inference
 
 After the BNN has been trained and the ONNX model has been saved, run the lane-keeping simulation using:
 
@@ -204,31 +204,6 @@ This scenario evaluates the robustness and uncertainty-handling capability of th
 # Initial Conditions
 
 For a fair comparison, the **same five initial conditions (ICs)** are used for all controllers in all three test scenarios.
-
-Therefore, the simulations are performed as:
-
-```
-Scenario 1
-├── IC 1
-├── IC 2
-├── IC 3
-├── IC 4
-└── IC 5
-
-Scenario 2
-├── IC 1
-├── IC 2
-├── IC 3
-├── IC 4
-└── IC 5
-
-Scenario 3
-├── IC 1
-├── IC 2
-├── IC 3
-├── IC 4
-└── IC 5
-```
 
 Using identical initial conditions ensures that the performance comparison between the proposed BNTSMC and the baseline controllers is consistent and fair.
 
