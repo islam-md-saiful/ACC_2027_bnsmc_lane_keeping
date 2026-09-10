@@ -1,0 +1,29 @@
+[project]
+name = "acc2027-bnsmc-lane-keeping"
+version = "0.1.0"
+description = "Bayesian Neural Terminal Sliding Mode Control for lane-keeping applications"
+readme = "README.md"
+authors = [
+    { name = "islam-md-saiful", email = "saiful.eee.ruet@gmail.com" }
+]
+requires-python = ">=3.12"
+
+dependencies = [
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.2",
+    "onnx>=1.22.0",
+    "onnxruntime>=1.29.0",
+    "onnxscript>=0.7.1",
+    "pandas>=3.0.5",
+    "torch>=2.14.0",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

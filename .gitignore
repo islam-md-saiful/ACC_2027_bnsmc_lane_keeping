@@ -1,0 +1,45 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build / package files
+build/
+dist/
+*.egg-info/
+
+# Editor settings
+.vscode/
+
+# Generated experiment outputs
+output/
+
+# Generated experiment files
+*.npz
+*.csv
+*.txt
+*.pt
+
+!outputs/lane_keeping/
+!outputs/lane_keeping/**
+
+# Config files if you do not want to track them
+configs/
+
+
+
+.matplotlib_cache/
+/src/bntsmc/.matplotlib_cache/
+
