@@ -30,7 +30,6 @@ dist/
 *.pt
 
 
-
 # Config files if you do not want to track them
 configs/
 
@@ -39,3 +38,6 @@ configs/
 .matplotlib_cache/
 /src/bntsmc/.matplotlib_cache/
 
+
+# Rust build files
+target/
