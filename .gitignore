@@ -23,17 +23,13 @@ dist/
 # Editor settings
 .vscode/
 
-# Generated experiment outputs
-output/
-
 # Generated experiment files
 *.npz
 *.csv
 *.txt
 *.pt
 
-!outputs/lane_keeping/
-!outputs/lane_keeping/**
+
 
 # Config files if you do not want to track them
 configs/
